@@ -1,1 +1,8 @@
 Instagram allows max 40 follows per hour
+never really waited one entire hour to verify if 'daiy_follow_loop' actually works till the end
+But conceptually... should work.. if screen's not going idle, or connection closes, or...
+
+A small profile doesn't really have much to do..
+I thinked about following random people and like/comment stranger's posts
+
+Actually running out of ideas...
