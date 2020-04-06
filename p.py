@@ -62,7 +62,6 @@ class Instabot(object):
         
     def go_there(self,where):
         """ requires an arguments, the text to write to the searchbar
-               it will select the first result
                best use with hastags"""
         self.browser.find_element_by_xpath('/html/body/div[1]/section/nav/div[2]/div/div/div[2]/input').send_keys('#{0}'.format(where))
         self.browser.implicitly_wait(2)
@@ -70,8 +69,7 @@ class Instabot(object):
         self.browser.find_element_by_xpath('/html/body/div[1]/section/main/article/div[1]/div/div/div[1]/div[2]').click()
 
     def do_likes(self, likes=100, every=4):
-        """ Selects the second image card, cause the first has different left/right buttons, just to keep the code smaller and compact
-                 Again, best use with hashtags and in general sections with lots of posts"""
+        """ Loops from the current card """
         #initiate counter
         chose = 0
         for i in range(likes):  #the one provided in args
